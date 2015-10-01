@@ -1,0 +1,22 @@
+<html ng-app="ansible-ui">
+	<head>
+		<title>Ansible UI</title>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-route/angular-route.min.js"></script>
+		<script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/format.css"/>
+	</head>
+	<body>
+		<div>
+			<div ng-include src="'html/layout/header.html'"></div>
+			<div ng-include src="'html/layout/side-menu.html'"></div>
+			<div ng-view>
+				
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+		<script src="controllers/command/commandLineController.js"></script>
+		<script src="services/commandLineServices.js"></script>
+	</body>
+</html>
